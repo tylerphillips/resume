@@ -1,0 +1,48 @@
+$wblack: #37373f;
+$worange: #f3773f;
+$wgreen: #6bbe52;
+$wblue: #79c0d0;
+$wred: #db5951;
+$wpink: #c21e65;
+$wwhite: #f5f7f7;
+$wgray: #95969a;
+
+body {
+ 	background: $wwhite;
+ 	font-family: 'Glegoo', Georgia, Times, serif;
+
+}
+
+.container {
+	max-height: 1280px;
+}
+
+h3 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 44px;
+}
+
+h4 {
+	font-size: 18px;
+	display: inline-block;
+	padding-right: 7px;
+}
+
+
+.ss-icon {
+	display: inline-block;
+	font-size: 40px;
+	line-height: 1;
+}
+
+.nav li a {
+	margin-left: -15px;
+}
+
+.subhead {
+	display: inline-block;
+}
+
+.location {
+	display: inline-block;
+}
