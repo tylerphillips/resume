@@ -15,6 +15,8 @@ $scheme-dg: #748d7d;
 $scheme-gray: #f2f2f2;
 $scheme-dark-gray: #a49d9d;
 
+$hov-red: #FF9384;
+
 body {
 	background: $wgray;
  	// background: $scheme-dark-gray;
@@ -24,13 +26,14 @@ body {
 
 .container {
 	// max-width: 1280px;
-	background: $wwhite;
+	background: $wgray;
 }
 
 .text-muted {
 	// color: $scheme-orange;
-	color: white;
+	color: $wwhite;
 	padding-right: 5px;
+	text-transform: uppercase; 
 }
 
 
@@ -55,8 +58,8 @@ h4 {
 
 .when {
 	margin-bottom: 5px;
-	color: $worange;
-
+	color: $scheme-dg;
+	font-style: italic;
 }
 
 .ss-icon {
@@ -72,6 +75,15 @@ h4 {
 	margin-bottom: -15px;
 }
 
+a {
+	color:$wred;
+}
+
+a:hover {
+	color: $hov-red;
+	text-decoration: none;
+}
+
 .nav li a {
 	margin: 0 auto;
 	margin-left: -15px;
@@ -84,6 +96,14 @@ h4 {
 	color: $scheme-lg;
 }
 
+.header-front {
+	margin-bottom: 0px;
+	position: relative;
+	top: 0px;
+	color: $wred;
+	font-size: 25px;
+}
+
 .header-sub {
 	margin-bottom: 0px;
 	position: relative;
@@ -91,12 +111,18 @@ h4 {
 	color: $wred;
 }
 
+.header-sub:hover {
+	color: $hov-red;
+}
+
 .subhead {
 	display: inline-block;
+	color: $wred;
 }
 
 .location {
 	display: inline-block;
+	color: $wgray;
 }
 
 .header {
@@ -107,14 +133,31 @@ h4 {
 	text-align: center;
 	padding: 20px;
 	margin: 0 auto;
-	width: 730px;
-	margin-left: -14px;
+	max-width: 730px;
+	// margin-left: -14px;
+
+	// border-radius: 40px 0px 40px 0px;
+	border-radius: 0px 40px 0px 40px;
+	// border-radius: 0px 0px 40px 40px;
 }
 
 .headings {
 	padding-left: 6px;
 }
 
+.front-link {
+	margin-top: -20px;
+}
+
+.content {
+	background: $wwhite;
+	margin-top: 0px;
+	padding: 15px;
+
+	border-radius: 40px 0px 40px 0px;
+	// border-radius: 0px 40px 0px 40px;
+	// border-radius: 40px 40px 0px 0px;
+}
 
 ul {
 	margin: 0 auto
