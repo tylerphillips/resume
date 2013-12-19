@@ -7,36 +7,88 @@ $wpink: #c21e65;
 $wwhite: #f5f7f7;
 $wgray: #95969a;
 
+$wtan: rgb(236, 236, 229);
+
+$scheme-orange: #e2614c;
+$scheme-lg: #abd6ba;
+$scheme-dg: #748d7d;
+$scheme-gray: #f2f2f2;
+$scheme-dark-gray: #a49d9d;
+
 body {
- 	background: $wwhite;
+	background: $wgray;
+ 	// background: $scheme-dark-gray;
  	font-family: 'Glegoo', Georgia, Times, serif;
 
 }
 
 .container {
-	max-height: 1280px;
+	// max-width: 1280px;
+	background: $wwhite;
 }
+
+.text-muted {
+	// color: $scheme-orange;
+	color: white;
+	padding-right: 5px;
+}
+
+
 
 h3 {
 	font-family: 'Oswald', sans-serif;
 	font-size: 44px;
+	padding-top: 10px;
+	color: $wblack;
+}
+
+.header h3 {
+	display: inline-block;
 }
 
 h4 {
 	font-size: 18px;
 	display: inline-block;
 	padding-right: 7px;
+	margin-bottom: 5px;
 }
 
+.when {
+	margin-bottom: 5px;
+	color: $worange;
+
+}
 
 .ss-icon {
 	display: inline-block;
 	font-size: 40px;
-	line-height: 1;
+	// line-height: 1;
+}
+
+.nav {
+	margin-top: 0px;
+	// margin-top: -20px;
+	display: inline-block;
+	margin-bottom: -15px;
 }
 
 .nav li a {
+	margin: 0 auto;
 	margin-left: -15px;
+	color: $scheme-dg;
+	padding: 0px 15px;
+
+}
+.nav li a:hover {
+	background: none;
+	color: $scheme-lg;
+}
+
+.header-sub {
+	margin-bottom: 0px;
+	position: relative;
+	top: 5px;
+	color: $wred;
 }
 
 .subhead {
@@ -45,4 +97,37 @@ h4 {
 
 .location {
 	display: inline-block;
+}
+
+.header {
+	margin-bottom: 0px;
+	// height: 145px;
+
+	background: $wblack;
+	text-align: center;
+	padding: 20px;
+	margin: 0 auto;
+	width: 730px;
+	margin-left: -14px;
+}
+
+.headings {
+	padding-left: 6px;
+}
+
+
+ul {
+	margin: 0 auto
+}
+
+i {
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+footer {
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 20px;
 }
